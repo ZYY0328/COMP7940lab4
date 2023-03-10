@@ -12,3 +12,5 @@ jobs: # gather all the jobs that run in the workflow
         run: |
           echo 'Viewing the file: '
           cat requirements.txt
+      - name: Check the security of source code
+        run: aufdenpunkt/python-safety-check
